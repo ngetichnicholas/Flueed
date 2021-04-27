@@ -74,7 +74,9 @@ body{
        border-radius:50%;
    }
    #secondColumn {
-       padding-left: 3em;;
+       padding-left: 3em;
+       height: 700px;
+       overflow-y: scroll;
    }
    #design,#development,#management {
        display: none;
