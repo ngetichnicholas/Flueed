@@ -70,4 +70,7 @@ body{
    .mail-choice:checked .msg {
     background-color: red;
    }
+   .task img {
+       border-radius:50%;
+   }
    
