@@ -79,4 +79,8 @@ body{
    #design,#development,#management {
        display: none;
    }
+   svg {
+       margin-top: 3em;
+       height: 15px;
+   }
    
