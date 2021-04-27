@@ -30,3 +30,10 @@ body{
 .content > div{
     border: 2px solid blue;
 }
+.projects {
+    padding: 2em ;
+}
+.date {
+    margin-left: 16px;
+    font-size: 13px;
+}
