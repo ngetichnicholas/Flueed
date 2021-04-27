@@ -30,3 +30,12 @@ body{
 .content > div{
     border: 2px solid blue;
 }
+.images{
+    display: flex;
+}
+.bluetick-icon{
+    display: flex;
+}
+.date{
+    display: flex;
+}
