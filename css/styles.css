@@ -61,7 +61,7 @@ body{
    }
    
    .mail-choice:checked + label:before {
-    border-color: green;
+    background-color: var(--button-color);
     background-color: var(--button-color);
     border-color: var(--button-color);
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='28' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check'%3e%3cpath d='M20 6L9 17l-5-5'/%3e%3c/svg%3e");
@@ -75,5 +75,8 @@ body{
    }
    #secondColumn {
        padding-left: 3em;;
+   }
+   #design,#development,#management {
+       display: none;
    }
    
