@@ -33,3 +33,25 @@ body{
 .content > div{
     border: 2px solid blue;
 }
+.images{
+    display: flex;
+}
+.bluetick-icon{
+    display: flex;
+}
+.date{
+    display: flex;
+    margin-left: 5%;
+}
+.article-text{
+   margin-left: 5%;
+   margin-top:15% ;
+   border-bottom: solid black;
+}
+.text{
+ margin-left: 5%; 
+ margin-top: 15%;
+ border-bottom: solid black; 
+
+    
+}
