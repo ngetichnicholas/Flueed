@@ -2,6 +2,9 @@
 :root{
     --primary-color : #316fd3
 }
+*{
+    font-family: 'Jost', sans-serif !important;
+}
 html{
     box-sizing: border-box;
 }
@@ -30,10 +33,34 @@ body{
 .content > div{
     border: 2px solid blue;
 }
+<<<<<<< HEAD
 .projects {
     padding: 2em ;
 }
 .date {
     margin-left: 16px;
     font-size: 13px;
+=======
+.images{
+    display: flex;
+}
+.bluetick-icon{
+    display: flex;
+}
+.date{
+    display: flex;
+    margin-left: 5%;
+}
+.article-text{
+   margin-left: 5%;
+   margin-top:15% ;
+   border-bottom: solid black;
+}
+.text{
+ margin-left: 5%; 
+ margin-top: 15%;
+ border-bottom: solid black; 
+
+    
+>>>>>>> 1e8d80081f522abaebeac4091701b4118e2a7aea
 }
