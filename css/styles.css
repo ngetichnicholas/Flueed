@@ -73,4 +73,7 @@ body{
    .task img {
        border-radius:50%;
    }
+   #secondColumn {
+       padding-left: 3em;;
+   }
    
