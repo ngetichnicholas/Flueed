@@ -41,7 +41,8 @@ body{
     margin-left: 5%;
 }
 .article-text{
-   
+   margin-left: 5%;
+   border-bottom: solid black;
 }
 .text{
     
