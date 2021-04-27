@@ -3,7 +3,7 @@
     --primary-color : #316fd3
 }
 *{
-    font-family: 'Jost', sans-serif;
+    font-family: 'Jost', sans-serif !important;
 }
 html{
     box-sizing: border-box;
