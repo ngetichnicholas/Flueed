@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flueed</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Stylesheet -->
@@ -16,29 +18,35 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row header-row">
+        <!-- <div class="row header-row">
             <div class="col-3">
                 Task Manager
             </div>
             <div class="col-9">
-               <div id="search">
-                   <div class="row">
-                       <div class="col-md-4">
-
-                       </div>
-                       <div class="col-md-8">
-                           <input type="text" placeholder="Search...">
-                       </div>
-                   </div>
-               </div>
+               Column 2 
             </div>
-        </div>
+        </div> -->
         <div class="row content">
             <div class="col-3" id="firstColumn">
                 
             </div>
             <div class="col-3" id="secondColumn">
-                
+                <div class="row seach-bar">
+                    <div class="col-md-4">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" placeholder="Search...">
+                    </div>
+                </div>
+                <div class="row projects">
+                    <select name="projects" id="projects">
+                        <option selected value="">MARKETING</option>
+                        <option selected value="">DESIGN</option>
+                        <option selected value="">DEVELOPMENT</option>
+                        <option selected value="">MANAGEMENT</option>
+                    </select>
+                </div>
             </div>
             <div class="col-6" id="thirdColumn">
                 
