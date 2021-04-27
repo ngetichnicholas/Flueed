@@ -42,10 +42,13 @@ body{
 }
 .article-text{
    margin-left: 5%;
+   margin-top:15% ;
    border-bottom: solid black;
 }
 .text{
  margin-left: 5%; 
- border-bottom: solid black;  
+ margin-top: 15%;
+ border-bottom: solid black; 
+
     
 }
