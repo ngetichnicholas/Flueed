@@ -54,23 +54,26 @@ $(document).ready(function () {
             if (teamAssigned === "marketing") {
                 let i = 0;
                 for (i = 0; i <= marketing.members.length; i++) {
-                    $('#memberAssigned').append('<option value="'+ +'">' + marketing.members[i].name + '</option>');
+                    $('#memberAssigned').append('<option value="' + marketing.members[i].name.split(" ", 1).toString().toLowerCase() + '">' + marketing.members[i].name + '</option>');
                 }
             } else if (teamAssigned === "design") {
                 let i = 0;
-                for (i = 0; i <= marketing.members.length; i++) {
-                    $('#memberAssigned').append('<option value="scott">' + design.members[i].name + '</option>');
+                for (i = 0; i <= design.members.length; i++) {
+                    $('#memberAssigned').append('<option value="' + design.members[i].name.split(" ", 1).toString().toLowerCase() + '">' + design.members[i].name + '</option>');
                 }
             } else if (teamAssigned === "development") {
                 let i = 0;
-                for (i = 0; i <= marketing.members.length; i++) {
-                    $('#memberAssigned').append('<option value="scott">' + development.members[i].name + '</option>');
+                for (i = 0; i <= development.members.length; i++) {
+                    $('#memberAssigned').append('<option value="' + development.members[i].name.split(" ", 1).toString().toLowerCase() + '">' + development.members[i].name + '</option>');
                 }
             } else if (teamAssigned === "management") {
                 let i = 0;
-                for (i = 0; i <= marketing.members.length; i++) {
-                    $('#memberAssigned').append('<option value="scott">' + management.members[i].name + '</option>');
+                for (i = 0; i <= management.members.length; i++) {
+                    $('#memberAssigned').append('<option value="' + management.members[i].name.split(" ", 1).toString().toLowerCase() + '">' + management.members[i].name + '</option>');
                 }
             }
         });
+
+        // Create new task.
+        
 });
