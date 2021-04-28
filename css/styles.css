@@ -112,7 +112,7 @@ svg {
 }
    .inbox-button,#addNewTask {
        width: 40%;
-       border-radius: 15px;
+       border-radius: 1.5rem;
    }
    .selected-bg {
        background-color: white;

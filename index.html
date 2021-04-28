@@ -196,9 +196,62 @@
                     </div>
                 </div>
                 <div id="addTask">
-                    <button id="addNewTask" class="btn btn-primary">Add task</button>
+                    <button id="addNewTask" class="btn btn-primary" type="button" data-toggle="modal" data-target="#modalId">Add Task</button>
                 </div>
-
+                <!--=============================== Modal =============================-->
+                <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Add Task</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="taskTitle">Task Title</label>
+                                        <input type="text" class="form-control" name="taskTitle" id="taskTitle" aria-describedby="helpId"
+                                            placeholder="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="taskDescription">Task Description</label>
+                                        <textarea class="form-control" name="taskDescription" id="taskDescription" rows="3" placeholder=""></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="teamAssigned">Team Assigned</label>
+                                        <select class="form-control" name="teamAssigned" id="teamAssigned">
+                                            <option value="marketing">Marketing</option>
+                                            <option value="design">Design</option>
+                                            <option value="development">Development</option>
+                                            <option value="management">Management</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="memberAssigned">Team Member Assigned</label>
+                                        <select class="form-control" name="memberAssigned" id="memberAssigned">
+                                            <option value="john">John Doe</option>
+                                            <option value="scott">Michael Scott</option>
+                                            <option value="dwyte">Dwyte Schrute</option>
+                                            <option value="jim">Jim Parson</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                    Cancel
+                                </button>
+                                <button type="button" class="btn btn-primary px-5">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===========================End of Modal======================================== -->
             </div>
             <div class="col-6" id="thirdColumn">
                 <div class="images">
