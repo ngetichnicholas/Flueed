@@ -1,15 +1,17 @@
 // Business Logic
-function Team(name, members){
+function Team(name, members) {
     this.name = name;
     this.tasks = [];
     this.members = members;
 }
-function Member(name, email, picUrl){
+
+function Member(name, email, picUrl) {
     this.name = name;
     this.email = email;
     this.picUrl = picUrl;
 }
-function Task(title, description, dateCreated, assignee){
+
+function Task(title, description, dateCreated, assignee) {
     this.title = title;
     this.description = description;
     this.dateCreated = dateCreated;
@@ -33,15 +35,42 @@ let development = new Team("Development", [nicholas, festus, john]);
 let management = new Team("Management", [samora, jane]);
 
 
-console.log(marketing.members);
+
 
 // UI logic.
-$(document).ready(function(){
-    $('.mail-choice').change(function() {
-        if($(this).is(":checked")) {
+$(document).ready(function () {
+    $('.mail-choice').change(function () {
+        if ($(this).is(":checked")) {
             $(this).parents().addClass('selected-bg');
-      } else {
-        $(this).parents().removeClass('selected-bg');
-      }
+        } else {
+            $(this).parents().removeClass('selected-bg');
+        }
     });
+
+    // Dropdown  selection on the modal to display members only in the selected team.
+        $('#teamAssigned').change(function () {
+            let teamAssigned = $('#teamAssigned').val();
+            $('#memberAssigned').empty();
+            if (teamAssigned === "marketing") {
+                let i = 0;
+                for (i = 0; i <= marketing.members.length; i++) {
+                    $('#memberAssigned').append('<option value="'+ +'">' + marketing.members[i].name + '</option>');
+                }
+            } else if (teamAssigned === "design") {
+                let i = 0;
+                for (i = 0; i <= marketing.members.length; i++) {
+                    $('#memberAssigned').append('<option value="scott">' + design.members[i].name + '</option>');
+                }
+            } else if (teamAssigned === "development") {
+                let i = 0;
+                for (i = 0; i <= marketing.members.length; i++) {
+                    $('#memberAssigned').append('<option value="scott">' + development.members[i].name + '</option>');
+                }
+            } else if (teamAssigned === "management") {
+                let i = 0;
+                for (i = 0; i <= marketing.members.length; i++) {
+                    $('#memberAssigned').append('<option value="scott">' + management.members[i].name + '</option>');
+                }
+            }
+        });
 });
