@@ -97,7 +97,7 @@ body{
    .task {
        margin-top: 10px;
        margin-bottom: 10px;
-       padding-left: 2em;
+       padding: 2em 0em 0em 2em;
    }
    h2 {
        text-transform: uppercase;

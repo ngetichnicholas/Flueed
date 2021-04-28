@@ -1,6 +1,9 @@
 $(document).ready(function(){
-$(".tick").click(function() {
-    $(this).siblings().addClass("default-background-color");
-    $(this).class(".task").addClass("default-background-color");
-})
+    $('.mail-choice').change(function() {
+        if($(this).is(":checked")) {
+            $(this).parents().addClass('selected-bg');
+      } else {
+        $(this).parents().removeClass('selected-bg');
+      }
+    });
 });
