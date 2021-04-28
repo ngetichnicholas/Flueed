@@ -47,14 +47,14 @@ body{
 }
 .mail-choice {
     display: none;
-   }
+}
    
-   .mail-choice + label:before {
+.mail-choice + label:before {
     content: "";
     display: flex;
     width: 35px;
     height: 35px;
-    border: 2px solid var(--main-light-color);
+    border: 2px solid var(--button-color);
     margin-right: 15px;
     border-radius: 50%;
     transition: 0.3s;
@@ -62,56 +62,88 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-   }
-   
-   .mail-choice:checked + label:before {
+}
+
+.mail-choice:checked + label:before {
     background-color: var(--button-color);
     background-color: var(--button-color);
     border-color: var(--button-color);
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='28' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check'%3e%3cpath d='M20 6L9 17l-5-5'/%3e%3c/svg%3e");
-   }
-   
-   .mail-choice:checked .msg {
+}
+
+.mail-choice:checked .msg {
     background-color: red;
-   }
-   .task img {
-       border-radius:50%;
-   }
-   #tasks {
-       height: 750px;
-       overflow-y: scroll;
-       background-color: #F0F1F7;
-       margin: 0;
-       padding: 0;
-   }
-   #tasks .row {
-       margin: 0;
-   }
-   #design,#development,#management {
-       display: none;
-   }
-   svg {
-       margin-top: 3em;
-       height: 15px;
-   }
+}
+.task img {
+    border-radius:50%;
+}
+#tasks {
+    height: 750px;
+    overflow-y: scroll;
+    background-color: #F0F1F7;
+    margin: 0;
+    padding: 0;
+}
+.project-header {
+    background-color: white;
+}
+#tasks .row {
+    margin: 0;
+}
+#design,#development,#management {
+    display: none;
+}
+svg {
+    margin-top: 3em;
+    height: 15px;
+}
    .task {
-       margin-top: 10px;
-       margin-bottom: 10px;
-       padding: 2em 0em 0em 2em;
-   }
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2em 0em 0em 2em;
+}
    h2 {
-       text-transform: uppercase;
-       font-size: 24px;
-   }
-   #addTask {
-       text-align: center;
-       padding: 3em 2em 2em 2em;
-   }
-   #addNewTask {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+#addTask {
+    text-align: center;
+    padding: 3em 2em 2em 3em;
+}
+   .inbox-button,#addNewTask {
        width: 40%;
-       border-radius: 15px;
+       border-radius: 1.5rem;
    }
    .selected-bg {
        background-color: white;
    }
+   .search-bar {
+    position: relative;
+   }
+   
+.search-bar input {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0 35px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23a1a4b9' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' class='feather feather-search'%3e%3ccircle cx='11' cy='11' r='8'/%3e%3cpath d='M21 21l-4.35-4.35'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 0 50%;
+    font-family: var(--body-font);
+    font-weight: 600;
+    font-size: 14px;
+}
+::placeholder {
+    color: #979DC3;
+}
+.header-right {
+    padding: 1.5em 0em 1.5em 3em;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+    
    
