@@ -34,6 +34,10 @@ body{
 .content > div{
     border: 2px solid blue;
 }
+#secondColumn {
+    margin: 0;
+    padding: 0;
+}
 .projects {
     padding: 2em ;
 }
@@ -74,9 +78,14 @@ body{
        border-radius:50%;
    }
    #tasks {
-       height: 700px;
+       height: 750px;
        overflow-y: scroll;
        background-color: #F0F1F7;
+       margin: 0;
+       padding: 0;
+   }
+   #tasks .row {
+       margin: 0;
    }
    #design,#development,#management {
        display: none;
@@ -93,5 +102,13 @@ body{
    h2 {
        text-transform: uppercase;
        font-size: 24px;
+   }
+   #addTask {
+       text-align: center;
+       padding: 3em 2em 2em 2em;
+   }
+   #addNewTask {
+       width: 40%;
+       border-radius: 15px;
    }
    
