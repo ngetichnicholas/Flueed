@@ -107,11 +107,36 @@ body{
        text-align: center;
        padding: 3em 2em 2em 2em;
    }
-   #addNewTask {
+   .inbox-button {
        width: 40%;
        border-radius: 15px;
    }
    .selected-bg {
        background-color: white;
    }
+   .search-bar {
+    height: 70px;
+    position: relative;
+   }
+   
+    .search-bar input {
+     height: 100%;
+     width: 100%;
+     display: block;
+     background-color: transparent;
+     border: none;
+     color: var(--body-color);
+     padding: 0 35px;
+     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23a1a4b9' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' class='feather feather-search'%3e%3ccircle cx='11' cy='11' r='8'/%3e%3cpath d='M21 21l-4.35-4.35'/%3e%3c/svg%3e");
+     background-repeat: no-repeat;
+     background-size: 18px;
+     background-position: 0 50%;
+     font-family: var(--body-font);
+     font-weight: 600;
+     font-size: 14px;
+    }
+     ::placeholder {
+      color: #979DC3;
+     }
+    
    
