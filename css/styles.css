@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
 :root{
-    --primary-color : #316fd3
+    --primary-color : #316fd3;
+    --button-color: #4d76fd;
 }
 *{
     font-family: 'Jost', sans-serif !important;
@@ -33,25 +34,84 @@ body{
 .content > div{
     border: 2px solid blue;
 }
-.images{
+#secondColumn {
+    margin: 0;
+    padding: 0;
+}
+.projects {
+    padding: 2em ;
+}
+.date {
+    margin-left: 16px;
+    font-size: 13px;
+}
+.mail-choice {
+    display: none;
+   }
+   
+   .mail-choice + label:before {
+    content: "";
     display: flex;
-}
-.bluetick-icon{
-    display: flex;
-}
-.date{
-    display: flex;
-    margin-left: 5%;
-}
-.article-text{
-   margin-left: 5%;
-   margin-top:15% ;
-   border-bottom: solid black;
-}
-.text{
- margin-left: 5%; 
- margin-top: 15%;
- border-bottom: solid black; 
-
-    
-}
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--main-light-color);
+    margin-right: 15px;
+    border-radius: 50%;
+    transition: 0.3s;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='28' viewBox='0 0 24 24' fill='none' stroke='%23a1a4b9' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check'%3e%3cpath d='M20 6L9 17l-5-5'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+   }
+   
+   .mail-choice:checked + label:before {
+    background-color: var(--button-color);
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='28' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check'%3e%3cpath d='M20 6L9 17l-5-5'/%3e%3c/svg%3e");
+   }
+   
+   .mail-choice:checked .msg {
+    background-color: red;
+   }
+   .task img {
+       border-radius:50%;
+   }
+   #tasks {
+       height: 750px;
+       overflow-y: scroll;
+       background-color: #F0F1F7;
+       margin: 0;
+       padding: 0;
+   }
+   #tasks .row {
+       margin: 0;
+   }
+   #design,#development,#management {
+       display: none;
+   }
+   svg {
+       margin-top: 3em;
+       height: 15px;
+   }
+   .task {
+       margin-top: 10px;
+       margin-bottom: 10px;
+       padding: 2em 0em 0em 2em;
+   }
+   h2 {
+       text-transform: uppercase;
+       font-size: 24px;
+   }
+   #addTask {
+       text-align: center;
+       padding: 3em 2em 2em 2em;
+   }
+   #addNewTask {
+       width: 40%;
+       border-radius: 15px;
+   }
+   .selected-bg {
+       background-color: white;
+   }
+   
