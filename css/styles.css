@@ -16,11 +16,8 @@ body{
     height: 10vh;
     width: 100%;
     margin: 0;
-    border: 2px solid red;
 }
-.header-row > div{
-    border: 2px solid green;
-}
+
 .container-fluid{
     padding: 0 !important;
     width: 100% !important;
@@ -31,8 +28,8 @@ body{
     width: 100%;
     margin: 0;
 }
-.content > div{
-    border: 2px solid blue;
+.content{
+    border-top: 2px solid lightgrey;
 }
 #secondColumn {
     margin: 0;
