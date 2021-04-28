@@ -76,6 +76,7 @@ body{
    #secondColumn {
        height: 700px;
        overflow-y: scroll;
+       background-color: #F0F1F7;
    }
    #design,#development,#management {
        display: none;
