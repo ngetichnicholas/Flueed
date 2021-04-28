@@ -73,7 +73,7 @@ body{
    .task img {
        border-radius:50%;
    }
-   #secondColumn {
+   #tasks {
        height: 700px;
        overflow-y: scroll;
        background-color: #F0F1F7;
