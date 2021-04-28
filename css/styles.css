@@ -54,7 +54,7 @@ body{
     display: flex;
     width: 35px;
     height: 35px;
-    border: 2px solid var(--main-light-color);
+    border: 2px solid var(--button-color);
     margin-right: 15px;
     border-radius: 50%;
     transition: 0.3s;
@@ -84,6 +84,9 @@ body{
     margin: 0;
     padding: 0;
 }
+.project-header {
+    background-color: white;
+}
 #tasks .row {
     margin: 0;
 }
@@ -107,7 +110,7 @@ svg {
     text-align: center;
     padding: 3em 2em 2em 3em;
 }
-   .inbox-button {
+   .inbox-button,#addNewTask {
        width: 40%;
        border-radius: 15px;
    }
