@@ -78,7 +78,7 @@ body{
     border-radius:50%;
 }
 #tasks {
-    height: 750px;
+    height: 80vh;
     overflow-y: scroll;
     background-color: #F0F1F7;
     margin: 0;
@@ -108,7 +108,10 @@ svg {
 }
 #addTask {
     text-align: center;
-    padding: 3em 2em 2em 3em;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
    .inbox-button,#addNewTask {
        width: 40%;
