@@ -142,11 +142,245 @@ svg {
 ::placeholder {
     color: #979DC3;
 }
-.header-right {
-    padding: 1.5em 0em 1.5em 3em;
+.header-right  > div {
+    display: flex;
+    align-items: center;
     width: 100%;
-    justify-content: space-evenly;
+    height: 100%;
 }
 
+
+.user-profile-area {
+    overflow-y: scroll; 
+  }
+  
+  .task-manager {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+   
+    text-transform: uppercase;
+    background-color: var(--theme-bg-color);
+  }
+    
+  .user-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .user-name {
+    font-weight: 600;
+    margin: 15px 0 8px;
+  }
+  
+  .user-mail {
+    color: var(--main-light-color);
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .user-profile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .side-wrapper {
+    padding: 25px 40px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .side-wapper:last-child {
+    border-bottom: none;
+  }
+  
+  
+  .user-notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  
+  svg {
+    width: 36px;
+    padding: 10px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: visible;
+    background-color: var(--button-bg-color);
+    color: var(--button-color);
+  }
+  
+  
+  .notify {
+    position: relative;
+  }
+  
+  .notify:not(:last-child) {
+    margin-right: 25px;
+  }
+  
+  .notify.alert {
+    position: relative;
+  }
+  
+  .notify.alert:before {
+    content: "2";
+    font-size: 9px;
+    font-weight: 700;
+    position: absolute;
+    background-color: #ff537b;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    top: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0px;
+    color: #fff;
+  }
+  
+  .notify.alert:last-child:before {
+    content: "5";
+  }
+  
+  
+  
+  .progress {
+    margin-top: 5px;
+    border-radius: 4px;
+    background-color: #e7e7ef;
+    height: 8px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    background-color: var(--button-color);
+    border-radius: 4px;
+    width: 35%;
+    height: 100%;
+    animation: progressAnimation 6s;
+    transition: 0.3s linear both;
+    transition-property: width, background-color;
+  }
+  
+  .progress-status {
+    margin-top: 30px;
+    text-align: right;
+    color: var(--main-color);
+    font-size: 10px;
+    font-weight: 600;
+  }
+  
+  
+  @keyframes progressAnimation {
+    0% {
+      width: 5%;
+      background-color: #a2b6f5;
+    }
+  
+    100% {
+      width: 35%;
+    }
+  }
+  
+  .task-status {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .task-stat {
+    text-align: center;
+  }
+  
+  .task-number {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .task-condition {
+    font-size: 12px;
+    color: var(--main-color);
+    font-weight: 700;
+  }
+  
+  .task-tasks {
+    margin-top: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--main-light-color);
+  }
+  
+  
+  .project-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 18px;
+  }
+  
+  .project-department {
+    position: relative;
+    vertical-align: middle;
+    padding: 0 30px;
+    color: var(--main-color);
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 14px;
+  }
+  
+  .project-department:before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 10;
+    left: 0;
+  }
+  
+  .project-department:nth-child(1):before {
+    border: 3px solid #b36dfb;
+  }
+  
+  .project-department:nth-child(2):before {
+    border: 3px solid #625be8;
+  }
+  
+  .project-department:nth-child(3):before {
+    border: 3px solid #fec267;
+  }
+  
+  .project-department:nth-child(4):before {
+    border: 3px solid #fc6679;
+  }
+  
+  
+  .members {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .team-member {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  
     
    

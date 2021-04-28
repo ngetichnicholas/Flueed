@@ -7,3 +7,37 @@ $(document).ready(function(){
       }
     });
 });
+
+
+
+//teams. a team has a meber, team name 
+
+function Team(name){
+  this.name = name;
+  this.members = [];
+  this.task = []
+}
+
+function Member(){
+  memberName
+  memberProfPic
+  
+}
+
+function Task(){
+  title 
+  description 
+  teanName
+  memberName 
+  this.comment = [];
+}
+
+function Comment(){
+
+}
+
+
+
+// function Profile(){
+
+// }
