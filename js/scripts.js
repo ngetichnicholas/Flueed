@@ -34,7 +34,7 @@ let design = new Team("Design", [aspin, peter]);
 let development = new Team("Development", [nicholas, festus, john]);
 let management = new Team("Management", [samora, jane]);
 
-
+let teams = [marketing, design, development, management]
 
 
 // UI logic.
@@ -48,32 +48,37 @@ $(document).ready(function () {
     });
 
     // Dropdown  selection on the modal to display members only in the selected team.
-        $('#teamAssigned').change(function () {
-            let teamAssigned = $('#teamAssigned').val();
-            $('#memberAssigned').empty();
-            if (teamAssigned === "marketing") {
-                let i = 0;
-                for (i = 0; i <= marketing.members.length; i++) {
-                    $('#memberAssigned').append('<option value="' + marketing.members[i].name.split(" ", 1).toString().toLowerCase() + '">' + marketing.members[i].name + '</option>');
-                }
-            } else if (teamAssigned === "design") {
-                let i = 0;
-                for (i = 0; i <= design.members.length; i++) {
-                    $('#memberAssigned').append('<option value="' + design.members[i].name.split(" ", 1).toString().toLowerCase() + '">' + design.members[i].name + '</option>');
-                }
-            } else if (teamAssigned === "development") {
-                let i = 0;
-                for (i = 0; i <= development.members.length; i++) {
-                    $('#memberAssigned').append('<option value="' + development.members[i].name.split(" ", 1).toString().toLowerCase() + '">' + development.members[i].name + '</option>');
-                }
-            } else if (teamAssigned === "management") {
-                let i = 0;
-                for (i = 0; i <= management.members.length; i++) {
-                    $('#memberAssigned').append('<option value="' + management.members[i].name.split(" ", 1).toString().toLowerCase() + '">' + management.members[i].name + '</option>');
-                }
-            }
-        });
+    $('#teamAssigned').change(function () {
+        let teamAssigned = $('#teamAssigned').val();
+        $('#memberAssigned').empty();
 
-        // Create new task.
-        
+        for (let i = 0; i < teams.length; i++) {
+            if (teamAssigned.toUpperCase() == teams[i].name.toUpperCase()) {
+                for(let n = 0; n < teams[i].members.length; n++){
+                    $('#memberAssigned').append('<option value="' + teams[i].members[n].name.split(" ", 1).toString().toLowerCase() + '">' + teams[i].members[n].name + '</option>');
+                }
+                break;
+            }
+        }
+    });
+
+    // Add new task.
+    $('#add').click(function (event) {
+        let taskTitle = $('#taskTitle').val();
+        let taskDescription = $('#taskDescription').val();
+        let teamAssigned = $('#teamAssigned').val();
+        let date = new Date();
+        let memberAssigned = $('#memberAssigned').val();
+
+        let newTask = new Task(taskTitle, taskDescription, date, memberAssigned);
+
+        for (let i = 0; i < teams.length; i++) {
+            if (teamAssigned.toUpperCase() == teams[i].name.toUpperCase()) {
+                teams[i].tasks.push(newTask);
+                break;
+            }
+        }
+        $(this).prev().click();
+        event.preventDefault();
+    });
 });
