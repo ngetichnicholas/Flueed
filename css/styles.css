@@ -140,7 +140,6 @@ svg {
     color: #979DC3;
 }
 .header-right  > div {
-    /* padding: 1.5em 0em 1.5em 3em; */
     display: flex;
     align-items: center;
     width: 100%;
@@ -149,17 +148,11 @@ svg {
 
 
 .user-profile-area {
-    /* width: 360px; */
-    /* border-right: 1px solid var(--border-color); */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* flex-shrink: 0; */
-    /* overflow: auto; */
+    overflow-y: scroll; 
   }
   
   .task-manager {
     font-size: 15px;
-    /* color: var(--title-color); */
     font-weight: 700;
     text-align: center;
     height: 100%; 
@@ -167,16 +160,11 @@ svg {
     align-items: center;
     width: 100%;
     justify-content: center;
-    /* letter-spacing: 0.7px; */
-    /* line-height: 70px; */
-    /* position: sticky; */
-    /* top: 0; */
-    /* z-index: 3; */
+   
     text-transform: uppercase;
     background-color: var(--theme-bg-color);
-    /* border-bottom: 1px solid var(--border-color); */
   }
-  
+    
   .user-photo {
     width: 70px;
     height: 70px;
