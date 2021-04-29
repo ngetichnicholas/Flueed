@@ -123,9 +123,24 @@ $(document).ready(function () {
         for (let n = 0; n < teams.length; n++) {
             if (selectedTeam.toUpperCase() == teams[n].name.toUpperCase()) {
                 for (let m = 0; m < teams[n].tasks.length; m++) {
-                    index = m + 1;
-                    $('#tasksList').append('<div class="row task"><div class="colmd-2 tick"><input type="checkbox" name="msg" id="mail' + index + '" class="mail-choice" /><label for="mail' + index + '"></label></div><div class="col-md-8 profile"><p>' + teams[n].tasks[m].title + '<br /><span class="date">' + date.toDateString() + '</span></p> </div><div class="col-md-2"><img src="' + teams[n].tasks[m].assignee.picUrl + '" alt="" width="40px" height="40px" /></div></div>');
+                    let index = m + 1;
+                    $('#tasksList').append('<div class="row task"><div class="colmd-2 tick"><input type="checkbox" name="msg" id="mail' + index + '" class="mail-choice" /><label for="mail' + index + '"></label></div><div class="col-md-8 profile"><p class="title" id="'+index+'">' + teams[n].tasks[m].title + '<br /><span class="date">' + date.toDateString() + '</span></p> </div><div class="col-md-2"><img src="' + teams[n].tasks[m].assignee.picUrl + '" alt="" width="40px" height="40px" /></div></div>');
                 }
+                break;
+            }
+        }
+    });
+
+    // Display clicked task details
+    $('#tasksList').on("click", ".title", function () {
+        let id = $(this).attr("id");
+        let idIndex = parseInt(id) - 1;
+        let selectedTeam = $('#teams').val();
+
+        for(let x = 0; x < teams.length; x++){
+            if (selectedTeam.toUpperCase() == teams[x].name.toUpperCase()) {
+                let currentTask = teams[x].tasks[idIndex].title;
+                alert(currentTask);
                 break;
             }
         }
