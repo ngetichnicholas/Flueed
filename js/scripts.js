@@ -36,18 +36,19 @@ let development = new Team("Development", [nicholas, festus, john]);
 let management = new Team("Management", [samora, jane]);
 
 // Testing Objects
+let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan commodo lectus gravida dictum.Aliquam a dui eu arcu hendrerit porta sed in velit.Fusce eu semper magna.Aenean porta facilisis neque, ac dignissim magna vestibulum eu.Etiam id ligula eget neque placerat ultricies in sed neque.Nam vitae rutrum est.Etiam non condimentum ante, eu consequat orci.Aliquam a dui eu arcu hendrerit porta sed in velit.Fusce eu semper magna."
 
-let marketingTask1 = new Task("Marketing Task 1", "This is a test object for the marketing team.", date, floice);
-let marketingTask2 = new Task("Marketing Task 2", "This is a test object for the marketing team.", date, odero);
+let marketingTask1 = new Task("Marketing Task 1", "This is a test object for the marketing team. "+lorem, date, floice);
+let marketingTask2 = new Task("Marketing Task 2", "This is a test object for the marketing team. " + lorem, date, odero);
 
-let designTask1 = new Task("Design Task 1", "This is a test object for the design team.", date, aspin);
-let designTask2 = new Task("Design Task 2", "This is a test object for the design team.", date, peter);
+let designTask1 = new Task("Design Task 1", "This is a test object for the design team. " + lorem, date, aspin);
+let designTask2 = new Task("Design Task 2", "This is a test object for the design team. " + lorem, date, peter);
 
-let devTask1 = new Task("Development Task 1", "This is a test object for the development team.", date, john);
-let devTask2 = new Task("Development Task 2", "This is a test object for the development team.", date, festus);
+let devTask1 = new Task("Development Task 1", "This is a test object for the development team. " + lorem, date, john);
+let devTask2 = new Task("Development Task 2", "This is a test object for the development team. " + lorem, date, festus);
 
-let mgtTask1 = new Task("Management Task 1", "This is a test object for the management team.", date, samora);
-let mgtTask2 = new Task("Management Task 2", "This is a test object for the management team.", date, jane);
+let mgtTask1 = new Task("Management Task 1", "This is a test object for the management team. " + lorem, date, samora);
+let mgtTask2 = new Task("Management Task 2", "This is a test object for the management team. " + lorem, date, jane);
 
 marketing.tasks.push(marketingTask1);
 marketing.tasks.push(marketingTask2);
@@ -140,7 +141,13 @@ $(document).ready(function () {
         for(let x = 0; x < teams.length; x++){
             if (selectedTeam.toUpperCase() == teams[x].name.toUpperCase()) {
                 let currentTask = teams[x].tasks[idIndex].title;
-                alert(currentTask);
+                $('#selectedTaskName').html(teams[x].tasks[idIndex].assignee.name);
+                $('#userCompleted').html(teams[x].tasks[idIndex].assignee.name.split(" ", 1) + " completed this task.")
+                $('.mail-contents-title').html(teams[x].tasks[idIndex].title);
+                $('.mail-inside').html(teams[x].tasks[idIndex].description);
+                $('#dp').empty();
+                $('#dp').prepend('<img src="' + teams[x].tasks[idIndex].assignee.picUrl + '" alt="Profile Picture" class = "members inbox-detail" / > ');
+                $('.mail-time, .mail-checklist-date').html(date.toDateString());
                 break;
             }
         }
