@@ -111,7 +111,7 @@ $(document).ready(function () {
                 break;
             }
         }
-   
+
         $(this).prev().click();
         event.preventDefault();
     });
@@ -124,7 +124,7 @@ $(document).ready(function () {
             if (selectedTeam.toUpperCase() == teams[n].name.toUpperCase()) {
                 for (let m = 0; m < teams[n].tasks.length; m++) {
                     counter = m + 1;
-                    $('#tasksList').append('<div class="row task"><div class="colmd-2 tick"><input type="checkbox" name="msg" id="mail' + counter + '" class="mail-choice" /><label for="mail' + counter + '"></label></div><div class="col-md-8 profile"><p>' + teams[n].tasks[m].title + '<br /><span class="date">'+ date.toDateString() +'</span></p> </div><div class="col-md-2"><img src="' + teams[n].tasks[m].assignee.picUrl + '" alt="" width="40px" height="40px" /></div></div>');
+                    $('#tasksList').append('<div class="row task"><div class="colmd-2 tick"><input type="checkbox" name="msg" id="mail' + counter + '" class="mail-choice" /><label for="mail' + counter + '"></label></div><div class="col-md-8 profile"><p>' + teams[n].tasks[m].title + '<br /><span class="date">' + date.toDateString() + '</span></p> </div><div class="col-md-2"><img src="' + teams[n].tasks[m].assignee.picUrl + '" alt="" width="40px" height="40px" /></div></div>');
                 }
                 break;
             }
