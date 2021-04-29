@@ -29,6 +29,7 @@ let samora = new Member("Samora Yommie", "samora@mail.com", "../img/profile-pics
 let floice = new Member("Floice Nyoita", "floice@mail.com", "../img/profile-pics/floice.jpeg");
 let aspin = new Member("Aspin Isoe", "aspin@mail.com", "../img/profile-pics/aspin.jpeg");
 
+
 let marketing = new Team("Marketing", [floice, odero]);
 let design = new Team("Design", [aspin, peter]);
 let development = new Team("Development", [nicholas, festus, john]);
@@ -62,7 +63,8 @@ management.tasks.push(mgtTask2);
 
 // Teams array.
 let teams = [marketing, design, development, management]
-
+// Members array
+let membersArray = [john, jane, nicholas, peter, odero, festus, samora, floice, aspin];
 
 // UI logic.
 $(document).ready(function () {
@@ -81,8 +83,8 @@ $(document).ready(function () {
 
         for (let i = 0; i < teams.length; i++) {
             if (teamAssigned.toUpperCase() == teams[i].name.toUpperCase()) {
-                for (let n = 0; n < teams[i].members.length; n++) {
-                    $('#memberAssigned').append('<option value="' + teams[i].members[n].name.split(" ", 1).toString().toLowerCase() + '">' + teams[i].members[n].name + '</option>');
+                for (let j = 0; j < teams[i].members.length; j++) {
+                    $('#memberAssigned').append('<option value="' + teams[i].members[j].name.split(" ", 1).toString().toLowerCase() + '">' + teams[i].members[j].name + '</option>');
                 }
                 break;
             }
@@ -96,14 +98,20 @@ $(document).ready(function () {
         let teamAssigned = $('#teamAssigned').val();
         let memberAssigned = $('#memberAssigned').val();
 
-        let newTask = new Task(taskTitle, taskDescription, date, memberAssigned);
+        for (let a = 0; a < membersArray.length; a++) {
+            if (memberAssigned.toLowerCase() == membersArray[a].name.split(" ", 1).toString().toLowerCase()) {
+                let newTask = new Task(taskTitle, taskDescription, date, membersArray[a]);
 
-        for (let i = 0; i < teams.length; i++) {
-            if (teamAssigned.toUpperCase() == teams[i].name.toUpperCase()) {
-                teams[i].tasks.push(newTask);
+                for (let k = 0; k < teams.length; k++) {
+                    if (teamAssigned.toUpperCase() == teams[k].name.toUpperCase()) {
+                        teams[k].tasks.push(newTask);
+                        break;
+                    }
+                }
                 break;
             }
         }
+   
         $(this).prev().click();
         event.preventDefault();
     });
@@ -112,11 +120,11 @@ $(document).ready(function () {
     $('#teams').change(function () {
         let selectedTeam = $('#teams').val();
         $('#tasksList').empty();
-        for (let i = 0; i < teams.length; i++) {
-            if (selectedTeam.toUpperCase() == teams[i].name.toUpperCase()) {
-                for (let m = 0; m < teams[i].tasks.length; m++) {
+        for (let n = 0; n < teams.length; n++) {
+            if (selectedTeam.toUpperCase() == teams[n].name.toUpperCase()) {
+                for (let m = 0; m < teams[n].tasks.length; m++) {
                     counter = m + 1;
-                    $('#tasksList').append('<div class="row task"><div class="colmd-2 tick"><input type="checkbox" name="msg" id="mail' + counter + '" class="mail-choice" /><label for="mail' + counter + '"></label></div><div class="col-md-8 profile"><p>' + teams[i].tasks[m].title + '<br /><span class="date">27 Apr 2021</span></p> </div><div class="col-md-2"><img src="' + teams[i].tasks[m].assignee.picUrl + '" alt="" width="40px" height="40px" /></div></div>');
+                    $('#tasksList').append('<div class="row task"><div class="colmd-2 tick"><input type="checkbox" name="msg" id="mail' + counter + '" class="mail-choice" /><label for="mail' + counter + '"></label></div><div class="col-md-8 profile"><p>' + teams[n].tasks[m].title + '<br /><span class="date">27 Apr 2021</span></p> </div><div class="col-md-2"><img src="' + teams[n].tasks[m].assignee.picUrl + '" alt="" width="40px" height="40px" /></div></div>');
                 }
                 break;
             }
