@@ -627,3 +627,6 @@ label {
 .send svg {
   color: var(--theme-bg-color);
 }
+textarea:focus, input:focus{
+  outline: none;
+}
