@@ -76,8 +76,8 @@ body {
 .mail-choice+label:before {
     content: "";
     display: flex;
-    width: 35px;
-    height: 35px;
+    width: 3rem;
+    height: 3rem;
     border: 2px solid var(--button-color);
     margin-right: 15px;
     border-radius: 50%;
@@ -93,6 +93,10 @@ body {
     background-color: var(--button-color);
     border-color: var(--button-color);
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='28' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check'%3e%3cpath d='M20 6L9 17l-5-5'/%3e%3c/svg%3e");
+}
+#mail30+ label::before {
+    height: 25px;
+    width: 25px;
 }
 
 .mail-choice:checked .msg {
@@ -126,9 +130,10 @@ svg {
 }
 
 .task {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 2em 0em 0em 2em;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 2em 0em 2em 2em;
+    border-top: 1px solid lightgrey;
 }
 
 h2 {
@@ -690,4 +695,40 @@ input:focus {
 }
 #thirdColumn {
     padding: 0;
+}
+.comments {
+    font-style: oblique;
+    background-color: #F0F1F7;
+}
+section {
+	width: 90%;
+	margin: 0 auto;
+}
+section span {
+	font-weight: bold;
+}
+section ul {
+	margin-top: 60px;
+	list-style: none;
+	padding-left: 0px;
+}
+
+section ul li {
+	padding: 10px 10px;
+    word-wrap: break-word;
+    border: 2px solid white;
+}
+
+section ul li:hover {
+	background-color:  #F0F1F7;
+}
+.description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+.describe {
+    margin-left: 2rem;
+    margin-top: 0;
 }

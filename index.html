@@ -382,7 +382,8 @@
                             <p class="task-title">
                                 Write an article about design <br />
                                 <span class="date">27 Apr 2021</span>
-                            </p>                        </div>
+                            </p>                        
+                        </div>
                         <div class="mail">
 
                             <div class="mail-inside">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
@@ -395,10 +396,10 @@
                                 Aliquam a dui eu arcu
                                 hendrerit porta sed in velit. Fusce eu semper magna.
                             </div>
-                            <div class="mail-checklist">
+                            <div class="mail-checklist description">
                                 <input type="checkbox" name="msg" id="mail30" class="mail-choice" checked>
                                 <label for="mail30">Festus completed this task.</label>
-                                <div class="mail-checklist-date"><span class="date">19 May, 2020</span></div>
+                                <span class="date describe">19 May, 2020</span>
                             </div><br>
                             <p>Aliquam a dui eu arcu hendrerit porta sed in velit. Fusce eu semper magna. Aenean
                                 porta facilisis neque, ac dignissim magna vestibulum eu. Etiam id ligula eget neque
@@ -420,11 +421,17 @@
                                 hendrerit porta sed in velit. Fusce eu semper magna.</p>
 
                         </div>
+                        <section>
+                            <ul class="clearfix comments">
+                            </ul>
+                        </section>
                     </div>
                 </div>
                 <div class="message-comment">
                     <div class="col-md-10 text">
-                        <textarea type="text" placeholder="Write a comment..."></textarea>
+                        <form name="comments" action="">
+                            <textarea class="commentBox" type="text" placeholder="Write a comment..."></textarea>
+                        </form>
                     </div>
                     <div class="col-md-2 send">
                         <button class="btn btn-primary send-message">Send</button>

@@ -46,6 +46,19 @@ $(document).ready(function () {
             $(this).parents().removeClass('selected-bg');
         }
     });
+    // comments apending Jquery
+    $('.send-message').click(function() {
+		var comment = $('.commentBox').val();
+        if (comment.length === 0) {
+            alert("Enter a comment in the textarea below!!!")
+            throw new Error;
+        }
+		$('<li>').text(comment).appendTo('.comments');
+		$('send-message').attr('disabled', 'true');
+        let form = document.getElementsByName("comments")[0];
+        form.reset();
+        return false
+	});
 
     // Dropdown  selection on the modal to display members only in the selected team.
     $('#teamAssigned').change(function () {
