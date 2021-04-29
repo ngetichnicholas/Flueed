@@ -38,7 +38,7 @@ let management = new Team("Management", [samora, jane]);
 // Testing Objects
 let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan commodo lectus gravida dictum.Aliquam a dui eu arcu hendrerit porta sed in velit.Fusce eu semper magna.Aenean porta facilisis neque, ac dignissim magna vestibulum eu.Etiam id ligula eget neque placerat ultricies in sed neque.Nam vitae rutrum est.Etiam non condimentum ante, eu consequat orci.Aliquam a dui eu arcu hendrerit porta sed in velit.Fusce eu semper magna."
 
-let marketingTask1 = new Task("Marketing Task 1", "This is a test object for the marketing team. "+lorem, date, floice);
+let marketingTask1 = new Task("Marketing Task 1", "This is a test object for the marketing team. " + lorem, date, floice);
 let marketingTask2 = new Task("Marketing Task 2", "This is a test object for the marketing team. " + lorem, date, odero);
 
 let designTask1 = new Task("Design Task 1", "This is a test object for the design team. " + lorem, date, aspin);
@@ -93,6 +93,10 @@ $(document).ready(function () {
         }
     });
 
+    function refreshList() {
+
+    }
+
     // Add new task.
     $('#add').click(function (event) {
         let taskTitle = $('#taskTitle').val();
@@ -114,24 +118,27 @@ $(document).ready(function () {
             }
         }
 
+        refreshList();
         $(this).prev().click();
         event.preventDefault();
     });
 
-    // Populate Tasks column with tasks.
-    $('#teams').change(function () {
+    function refreshList() {
         let selectedTeam = $('#teams').val();
         $('#tasksList').empty();
         for (let n = 0; n < teams.length; n++) {
             if (selectedTeam.toUpperCase() == teams[n].name.toUpperCase()) {
                 for (let m = 0; m < teams[n].tasks.length; m++) {
                     let index = m + 1;
-                    $('#tasksList').append('<div class="row task"><div class="colmd-2 tick"><input type="checkbox" name="msg" id="mail' + index + '" class="mail-choice" /><label for="mail' + index + '"></label></div><div class="col-md-8 profile"><p class="title" id="'+index+'">' + teams[n].tasks[m].title + '<br /><span class="date">' + date.toDateString() + '</span></p> </div><div class="col-md-2"><img src="' + teams[n].tasks[m].assignee.picUrl + '" alt="" width="40px" height="40px" /></div></div>');
+                    $('#tasksList').append('<div class="row task"><div class="colmd-2 tick"><input type="checkbox" name="msg" id="mail' + index + '" class="mail-choice" /><label for="mail' + index + '"></label></div><div class="col-md-8 profile"><p class="title" id="' + index + '">' + teams[n].tasks[m].title + '<br /><span class="date">' + date.toDateString() + '</span></p> </div><div class="col-md-2"><img src="' + teams[n].tasks[m].assignee.picUrl + '" alt="" width="40px" height="40px" /></div></div>');
                 }
                 break;
             }
         }
-    });
+    }
+
+    // Populate Tasks column with tasks.
+    $('#teams').on('change', refreshList);
 
     // Display clicked task details
     $('#tasksList').on("click", ".title", function () {
@@ -140,7 +147,7 @@ $(document).ready(function () {
         let idIndex = parseInt(id) - 1;
         let selectedTeam = $('#teams').val();
 
-        for(let x = 0; x < teams.length; x++){
+        for (let x = 0; x < teams.length; x++) {
             if (selectedTeam.toUpperCase() == teams[x].name.toUpperCase()) {
                 let currentTask = teams[x].tasks[idIndex].title;
                 $('#selectedTaskName').html(teams[x].tasks[idIndex].assignee.name);
