@@ -36,11 +36,16 @@ body{
     padding: 0;
 }
 .projects {
-    padding: 2em ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
 }
 .date {
-    margin-left: 16px;
     font-size: 13px;
+    float: left;
 }
 .mail-choice {
     display: none;
@@ -83,6 +88,7 @@ body{
 }
 .project-header {
     background-color: white;
+    height: 10%;
 }
 #tasks .row {
     margin: 0;
@@ -620,4 +626,7 @@ label {
 
 .send svg {
   color: var(--theme-bg-color);
+}
+textarea:focus, input:focus{
+  outline: none;
 }
