@@ -699,10 +699,12 @@ input:focus {
 .comments {
     font-style: oblique;
     background-color: #F0F1F7;
+    margin: 0;
 }
 section {
 	width: 90%;
 	margin: 0 auto;
+    margin-left: 0;
 }
 section span {
 	font-weight: bold;
@@ -731,4 +733,8 @@ section ul li:hover {
 .describe {
     margin-left: 2rem;
     margin-top: 0;
+}
+.task-comments {
+    font-size: 1rem;
+    font-weight: 900;
 }
