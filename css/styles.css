@@ -44,7 +44,7 @@ body {
     padding: 0;
 }
 
-.projects {
+.teams {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,7 +56,7 @@ body {
     font-size: 1.5rem;
 }
 
-.projects * {
+.teams * {
     font-size: 1rem;
     text-transform: capitalize;
     color: var(--primary-color);
@@ -64,8 +64,9 @@ body {
 }
 
 .date {
-    font-size: 13px;
+    font-size: 0.8rem;
     float: left;
+    font-weight: 100;
 }
 
 .mail-choice {
@@ -110,7 +111,7 @@ body {
     padding: 0;
 }
 
-.project-header {
+.team-header {
     background-color: white;
     height: 10%;
 }
@@ -190,10 +191,11 @@ h2 {
 
 .user-profile-area {
     overflow-y: scroll;
+    height: 80vh;
 }
 
 .task-manager {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
     height: 100%;
@@ -212,16 +214,21 @@ h2 {
     border-radius: 50%;
     object-fit: cover;
 }
+.task p {
+    font-size: 1rem;
+    font-weight: 900;
+}
 
 .user-name {
     font-weight: 600;
     margin: 15px 0 8px;
+    font-size: 1.5rem;
 }
 
 .user-mail {
     color: var(--main-light-color);
-    font-size: 12px;
-    font-weight: 600;
+    font-weight: 100;
+    font-size: 1rem;
 }
 
 .user-profile {
@@ -234,6 +241,7 @@ h2 {
 .side-wrapper {
     padding: 25px 40px;
     border-bottom: 1px solid var(--border-color);
+    font-size: 1rem;
 }
 
 .side-wapper:last-child {
@@ -316,7 +324,7 @@ svg {
     margin-top: 30px;
     text-align: right;
     color: var(--main-color);
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -344,42 +352,42 @@ svg {
 }
 
 .task-number {
-    font-size: 17px;
+    font-size: 1rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .task-condition {
-    font-size: 12px;
+    font-size: 1rem;
     color: var(--main-color);
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .task-tasks {
     margin-top: 4px;
-    font-size: 10px;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 100;
     color: var(--main-light-color);
 }
 
 
-.project-title {
+.team-title {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 18px;
 }
 
-.project-department {
+.team-department {
     position: relative;
     vertical-align: middle;
     padding: 0 30px;
     color: var(--main-color);
-    font-size: 13px;
+    font-size: 1rem;
     font-weight: 600;
     margin-top: 14px;
 }
 
-.project-department:before {
+.team-department:before {
     position: absolute;
     content: "";
     width: 8px;
@@ -389,20 +397,24 @@ svg {
     left: 0;
 }
 
-.project-department:nth-child(1):before {
-    border: 3px solid #b36dfb;
+.team-department:nth-child(1):before {
+    border: 0.3rem solid #b36dfb;
+    padding: 0.4rem;
 }
 
-.project-department:nth-child(2):before {
-    border: 3px solid #625be8;
+.team-department:nth-child(2):before {
+    border: 0.3rem solid #625be8;
+    padding: 0.4rem;
 }
 
-.project-department:nth-child(3):before {
-    border: 3px solid #fec267;
+.team-department:nth-child(3):before {
+    border: 0.3rem solid #fec267;
+    padding: 0.4rem;
 }
 
-.project-department:nth-child(4):before {
-    border: 3px solid #fc6679;
+.team-department:nth-child(4):before {
+    border: 0.3rem solid #fc6679;
+    padding: 0.4rem;
 }
 
 
@@ -416,6 +428,8 @@ svg {
 .team-member {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 
