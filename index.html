@@ -109,33 +109,22 @@
                     <!-- tasks title/header -->
                     <div class="row project-header">
                         <div class="col">
-                            <select class="row projects text-uppercase text-center">
-                                <option id="marketing">Marketing</option>
-                                <option id="design">Design</option>
-                                <option id="development">Development</option>
-                                <option id="management">Management</option>
+                            <select class="row projects text-uppercase text-center" id="teams">
+                                <option value="" selected disabled>Select Team</option>
+                                <option id="marketing" value="marketing">Marketing</option>
+                                <option id="design" value="design">Design</option>
+                                <option id="development" value="development">Development</option>
+                                <option id="management" value="management">Management</option>
                             </select>
                         </div>
                     </div>
+
+                    <div id="tasksList">
                     <!-- end of tasks header -->
                     
                     <!-- team tasks list in  rows -->
-                    <div class="row task">
-                        <div class="colmd-2 tick">
-                            <input type="checkbox" name="msg" id="mail1" class="mail-choice" />
-                            <label for="mail1"></label>
-                        </div>
-                        <div class="col-md-8 profile">
-                            <p>
-                                Write an article about design <br />
-                                <span class="date">27 Apr 2021</span>
-                            </p>
-                        </div>
-                        <div class="col-md-2">
-                            <img src="profiles/download (1).jpeg" alt="" width="40px" height="40px" />
-                        </div>
-                    </div>
-                    <div class="row task">
+                
+                    <!-- <div class="row task">
                         <div class="colmd-2 tick">
                             <input type="checkbox" name="msg" id="mail2" class="mail-choice" />
                             <label for="mail2"></label>
@@ -254,6 +243,7 @@
                         <div class="col-md-2">
                             <img src="profiles/images (3).jpeg" alt="" width="40px" height="40px" />
                         </div>
+                    </div> -->
                     </div>
                 </div>
                 <!-- end of tasks list -->
