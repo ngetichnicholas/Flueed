@@ -19,15 +19,15 @@ function Task(title, description, dateCreated, assignee) {
 }
 var date = new Date();
 
-let john = new Member("John Doe", "johndoe@mail.com", "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
-let jane = new Member("Jane Doe", "janedoe@mail.com", "https://images.unsplash.com/photo-1518577915332-c2a19f149a75?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=784&q=80");
-let nicholas = new Member("Nicholas Ngetich", "johndoe@mail.com", "https://images.unsplash.com/photo-1612214070475-1e73f478188c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
-let peter = new Member("Peter Kennedy", "johndoe@mail.com", "https://images.unsplash.com/photo-1542909192-2f2241a99c9d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
-let odero = new Member("Odero Oluoch", "odero@mail.com", "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
-let festus = new Member("Festus Mutie", "festus@mail.com", "https://images.unsplash.com/photo-1618018352910-72bdafdc82a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
-let samora = new Member("Samora Yommie", "samora@mail.com", "https://images.unsplash.com/photo-1618077360395-f3068be8e001?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
-let floice = new Member("Floice Nyoita", "floice@mail.com", "https://images.unsplash.com/photo-1485893086445-ed75865251e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80");
-let aspin = new Member("Aspin Isoe", "aspin@mail.com", "https://images.unsplash.com/photo-1562124638-724e13052daf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
+let john = new Member("John Doe", "johndoe@mail.com", "../img/profile-pics/john.jpeg");
+let jane = new Member("Jane Doe", "janedoe@mail.com", "../img/profile-pics/jane.jpeg");
+let nicholas = new Member("Nicholas Ngetich", "johndoe@mail.com", "../img/profile-pics/nicholas.jpeg");
+let peter = new Member("Peter Kennedy", "johndoe@mail.com", "../img/profile-pics/peter.jpeg");
+let odero = new Member("Odero Oluoch", "odero@mail.com", "../img/profile-pics/odero.jpeg");
+let festus = new Member("Festus Mutie", "festus@mail.com", "../img/profile-pics/festus.jpeg");
+let samora = new Member("Samora Yommie", "samora@mail.com", "../img/profile-pics/samora.jpeg");
+let floice = new Member("Floice Nyoita", "floice@mail.com", "../img/profile-pics/floice.jpeg");
+let aspin = new Member("Aspin Isoe", "aspin@mail.com", "../img/profile-pics/aspin.jpeg");
 
 let marketing = new Team("Marketing", [floice, odero]);
 let design = new Team("Design", [aspin, peter]);
