@@ -121,7 +121,7 @@ body {
 }
 
 svg {
-    margin-top: 3em;
+    margin-top: 0;
     height: 15px;
 }
 
@@ -445,6 +445,12 @@ svg {
 .mail-detail-profile {
     display: flex;
     align-items: center;
+
+}
+.mail-icons {
+    display: flex;
+    height: 3rem;
+    margin-top: 0;
 }
 
 .mail-detail-header {
@@ -482,8 +488,8 @@ svg {
 }
 
 .mail-icons svg {
-    width: 42px;
-    height: 42px;
+    width: 3rem;
+    height: 3rem;
     padding: 13px;
     flex-shrink: 0;
     margin-left: 10px;
@@ -560,7 +566,7 @@ label {
     align-items: center;
     color: var(--button-color);
     font-weight: 600;
-    font-size: 13px;
+    font-size: 1rem;
 }
 
 .mail-time-checklist-date {
