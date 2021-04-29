@@ -211,8 +211,8 @@ h2 {
 }
 
 .user-photo {
-    width: 70px;
-    height: 70px;
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -460,7 +460,7 @@ svg {
 }
 
 .mail-detail-name {
-    font-size: 14px;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-left: 10px;
     white-space: nowrap;
@@ -510,15 +510,16 @@ svg {
 
 .mail-contents-title {
     font-weight: 700;
-    font-size: 17px;
+    font-size: 1rem;
     margin-left: 5px;
 }
 
 
 .mail {
     padding-left: 55px;
-    font-size: 14px;
+    font-size: 1rem;
     color: var(--main-light-color);
+    font-family: 'Jost', sans-serif !important;
 }
 
 .mail-time {
