@@ -44,8 +44,8 @@ body{
     text-align: center;
 }
 .date {
-    margin-left: 16px;
     font-size: 13px;
+    float: left;
 }
 .mail-choice {
     display: none;
