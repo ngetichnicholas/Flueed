@@ -187,7 +187,9 @@ h2 {
     width: 100%;
     height: 100%;
 }
-
+#firstColumn {
+    padding: 0;
+}
 
 .user-profile-area {
     overflow-y: scroll;
