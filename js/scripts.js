@@ -69,6 +69,7 @@ let membersArray = [john, jane, nicholas, peter, odero, festus, samora, floice, 
 
 // UI logic.
 $(document).ready(function () {
+    $('.mail-detail').hide();
     $('.mail-choice').change(function () {
         if ($(this).is(":checked")) {
             $(this).parents().addClass('selected-bg');
@@ -134,6 +135,7 @@ $(document).ready(function () {
 
     // Display clicked task details
     $('#tasksList').on("click", ".title", function () {
+        $('.mail-detail').fadeIn();
         let id = $(this).attr("id");
         let idIndex = parseInt(id) - 1;
         let selectedTeam = $('#teams').val();
