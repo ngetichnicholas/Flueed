@@ -185,7 +185,7 @@ $(document).ready(function () {
 		}
 	});
 
-	function refreshList() {}
+	refreshList();
 
 	// Add new task.
 	$("#add").click(function (event) {
@@ -222,7 +222,7 @@ $(document).ready(function () {
 	});
 
 	function refreshList() {
-		let selectedTeam = $("#teams").val();
+		let selectedTeam = $("#teams").children("option:selected").val();
 		$("#tasksList").empty();
 		for (let n = 0; n < teams.length; n++) {
 			if (selectedTeam.toUpperCase() == teams[n].name.toUpperCase()) {
