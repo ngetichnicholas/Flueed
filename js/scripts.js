@@ -22,47 +22,47 @@ var date = new Date();
 let john = new Member(
 	"John Doe",
 	"johndoe@mail.com",
-	"./img/john.jpeg"
+	"img/john.jpeg"
 );
 let jane = new Member(
 	"Jane Doe",
 	"janedoe@mail.com",
-	"./img/jane.jpeg"
+	"img/jane.jpeg"
 );
 let nicholas = new Member(
 	"Nicholas Ngetich",
 	"johndoe@mail.com",
-	"./img/nicholas.jpeg"
+	"img/nicholas.jpeg"
 );
 let peter = new Member(
 	"Peter Kennedy",
 	"johndoe@mail.com",
-	"./img/peter.jpeg"
+	"img/peter.jpeg"
 );
 let odero = new Member(
 	"Odero Oluoch",
 	"odero@mail.com",
-	"./img/odero.jpeg"
+	"img/odero.jpeg"
 );
 let festus = new Member(
 	"Festus Mutie",
 	"festus@mail.com",
-	"./img/festus.jpeg"
+	"img/festus.jpeg"
 );
 let samora = new Member(
 	"Samora Yommie",
 	"samora@mail.com",
-	"./img/samora.jpeg"
+	"img/samora.jpeg"
 );
 let floice = new Member(
 	"Floice Nyoita",
 	"floice@mail.com",
-	"./img/floice.jpeg"
+	"img/floice.jpeg"
 );
 let aspin = new Member(
 	"Aspin Isoe",
 	"aspin@mail.com",
-	"./img/aspin.jpeg"
+	"img/aspin.jpeg"
 );
 
 let marketing = new Team("Marketing", [floice, odero]);
