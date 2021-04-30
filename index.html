@@ -1,130 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Flueed</title>
+		<!-- font awesome -->
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<!-- Stylesheet -->
+		<link rel="stylesheet" href="css/styles.css" />
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<!-- JS -->
+		<script src="js/scripts.js"></script>
+	</head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flueed</title>
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- JS -->
-    <script src="js/scripts.js"></script>
-</head>
+	<body>
+		<div class="container-fluid">
+			<!-- header section -->
+			<div class="row header-row">
+				<div class="col-3">
+					<div class="task-manager">
+						<p>task manager</p>
+					</div>
+				</div>
+				<!-- header -->
+				<div class="col-9 header-right">
+					<div class="row">
+						<!-- search bar -->
+						<div class="col-md-5 search-bar">
+							<input type="text" placeholder="Search..." />
+						</div>
+						<!-- messages -->
+						<div class="col-md-4">
+							<button class="btn btn-primary inbox-button">Inbox</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of header section -->
+			<div class="row content">
+				<div class="col-3" id="firstColumn">
+					<!-- User profile area -->
+					<div class="user-profile-area">
+						<div class="side-wrapper">
+							<div class="user-profile">
+								<img src="./profiles/Odesh.jpg" alt="" class="user-photo" />
+								<div class="user-name">Odero Oluoch</div>
+								<div class="user-mail">Odero.Oluoch@gmail.com</div>
+							</div>
+							<div class="progress-status">12/34</div>
+							<div class="progress">
+								<div class="progress-bar"></div>
+							</div>
+							<div class="task-status">
+								<div class="task-stat">
+									<div class="task-number">12</div>
+									<div class="task-condition">Completed</div>
+									<div class="task-tasks">tasks</div>
+								</div>
+								<div class="task-stat">
+									<div class="task-number">22</div>
+									<div class="task-condition">To do</div>
+									<div class="task-tasks">tasks</div>
+								</div>
+								<div class="task-stat">
+									<div class="task-number">243</div>
+									<div class="task-condition">All</div>
+									<div class="task-tasks">completed</div>
+								</div>
+							</div>
+						</div>
+						<div class="side-wrapper">
+							<div class="project-title">Projects</div>
+							<div class="project-name">
+								<div class="project-department">Marketing</div>
+								<div class="project-department">Design</div>
+								<div class="project-department">Development</div>
+								<div class="project-department">Management</div>
+							</div>
+						</div>
+						<div class="side-wrapper">
+							<div class="project-title">Team</div>
+							<div class="team-member">
+								<img
+									src="./profiles/download (2).jpeg"
+									alt=""
+									class="members"
+								/>
+								<img
+									src="./profiles/download (3).jpeg"
+									alt=""
+									class="members"
+								/>
+								<img
+									src="./profiles/download (4).jpeg"
+									alt=""
+									class="members"
+								/>
+								<img
+									src="./profiles/download (6).jpeg"
+									alt=""
+									class="members"
+								/>
+								<img
+									src="./profiles/download (4).jpeg"
+									alt=""
+									class="members"
+								/>
+							</div>
+						</div>
+					</div>
+					<!-- End of User profile area -->
+				</div>
+				<!-- second column -->
+				<div class="col-3" id="secondColumn">
+					<!-- tasks area -->
+					<div id="tasks">
+						<!-- tasks title/header -->
+						<div class="row project-header">
+							<div class="col">
+								<select
+									class="row projects text-uppercase text-center"
+									id="teams"
+								>
+									<option value="" selected disabled>Select Team</option>
+									<option id="marketing" value="marketing">Marketing</option>
+									<option id="design" value="design">Design</option>
+									<option id="development" value="development">
+										Development
+									</option>
+									<option id="management" value="management">Management</option>
+								</select>
+							</div>
+						</div>
 
-<body>
-    <div class="container-fluid">
-        <!-- header section -->
-        <div class="row header-row">
-            <div class="col-3">
-                <div class="task-manager">
-                    <p>task manager</p>
-                </div>
-            </div>
-            <!-- header -->
-            <div class="col-9 header-right">
-                <div class="row">
-                    <!-- search bar -->
-                    <div class="col-md-5 search-bar">
-                        <input type="text" placeholder="Search..." />
-                    </div>
-                    <!-- messages -->
-                    <div class="col-md-4">
-                        <button class="btn btn-primary inbox-button">Inbox</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end of header section -->
-        <div class="row content">
-            <div class="col-3" id="firstColumn">
-                <!-- User profile area -->
-                <div class="user-profile-area">
-                    <div class="side-wrapper">
-                        <div class="user-profile">
-                            <img src="./profiles/Odesh.jpg" alt=""
-                                class="user-photo" />
-                            <div class="user-name">Odero Oluoch</div>
-                            <div class="user-mail">Odero.Oluoch@gmail.com</div>
-                        </div>
-                        <div class="progress-status">12/34</div>
-                        <div class="progress">
-                            <div class="progress-bar"></div>
-                        </div>
-                        <div class="task-status">
-                            <div class="task-stat">
-                                <div class="task-number">12</div>
-                                <div class="task-condition">Completed</div>
-                                <div class="task-tasks">tasks</div>
-                            </div>
-                            <div class="task-stat">
-                                <div class="task-number">22</div>
-                                <div class="task-condition">To do</div>
-                                <div class="task-tasks">tasks</div>
-                            </div>
-                            <div class="task-stat">
-                                <div class="task-number">243</div>
-                                <div class="task-condition">All</div>
-                                <div class="task-tasks">completed</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="side-wrapper">
-                        <div class="team-title">Teams</div>
-                        <div class="team-name">
-                            <div class="team-department">Marketing</div>
-                            <div class="team-department">Design</div>
-                            <div class="team-department">Development</div>
-                            <div class="team-department">Management</div>
-                        </div>
-                    </div>
-                    <div class="side-wrapper">
-                        <div class="team-title">Members</div>
-                        <div class="team-member">
-                            <img src="./profiles/download (2).jpeg" alt="" class="members" />
-                            <img src="./profiles/download (3).jpeg" alt="" class="members" />
-                            <img src="./profiles/download (4).jpeg" alt="" class="members" />
-                            <img src="./profiles/download (6).jpeg" alt="" class="members" />
-                            <img src="./profiles/download (4).jpeg" alt="" class="members" />
-                        </div>
-                    </div>
-                </div>
-                <!-- End of User profile area -->
-            </div>
-            <!-- second column -->
-            <div class="col-3" id="secondColumn">
-                <!-- tasks area -->
-                <div id="tasks">
-                    <!-- tasks title/header -->
-                    <div class="row team-header">
-                        <div class="col">
+						<div id="tasksList">
+							<!-- end of tasks header -->
 
-                            <select class="row teams text-uppercase text-center">
-                                <option id="marketing">Marketing</option>
-                                <option id="design">Design</option>
-                                <option id="development">Development</option>
-                                <option id="management">Management</option>
-                            </select>
-                        </div>
-                    </div>
+							<!-- team tasks list in  rows -->
 
-                    <div id="tasksList">
-                    <!-- end of tasks header -->
-                    
-                    <!-- team tasks list in  rows -->
-                
-                    <!-- <div class="row task">
+
+							<!-- <div class="row task">
                         <div class="colmd-2 tick">
                             <input type="checkbox" name="msg" id="mail2" class="mail-choice" />
                             <label for="mail2"></label>
@@ -244,185 +276,205 @@
                             <img src="profiles/images (3).jpeg" alt="" width="40px" height="40px" />
                         </div>
                     </div> -->
-                    </div>
-                    <div class="row task">
-                        <div class="colmd-2">
-                            <input type="checkbox" name="msg" id="mail10" class="mail-choice" />
-                            <label for="mail10"></label>
-                        </div>
-                        <div class="col-md-8">
-                            <p>
-                                Tenth task in Marketing team <br />
-                                <span class="date">27 Apr 2021</span>
-                            </p>
-                        </div>
-                        <div class="col-md-2">
-                            <img src="profiles/images (3).jpeg" alt="" width="40px" height="40px" />
-                        </div>
-                    </div>
-                </div>
-                <!-- end of tasks list -->
-                <div id="addTask">
-                    <button id="addNewTask" class="btn btn-primary" type="button" data-toggle="modal"
-                        data-target="#modalId">
-                        Add Task
-                    </button>
-                </div>
-
-                <!--=============================== Modal =============================-->
-                <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Add Task</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="taskTitle">Task Title</label>
-                                        <input type="text" class="form-control" name="taskTitle" id="taskTitle"
-                                            aria-describedby="helpId" placeholder="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="taskDescription">Task Description</label>
-                                        <textarea class="form-control" name="taskDescription" id="taskDescription"
-                                            rows="3" placeholder=""></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="teamAssigned">Team Assigned</label>
-                                        <select class="form-control" name="teamAssigned" id="teamAssigned">
-                                            <option value="" selected default disabled></option>
-                                            <option value="marketing">Marketing</option>
-                                            <option value="design">Design</option>
-                                            <option value="development">Development</option>
-                                            <option value="management">Management</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="memberAssigned">Team Member Assigned</label>
-                                        <select class="form-control" name="memberAssigned" id="memberAssigned">
-                                            <!-- <option value="john">John Doe</option> -->
-                                            <!-- To be handled by jQuery -->
-                                        </select>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                                    Cancel
-                                </button>
-                                <button type="button" class="btn btn-primary px-5" id="add">
-                                    Add
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ===========================End of Modal======================================== -->
-            </div>
-            <div class="col-6" id="thirdColumn">
-                <!-- This is the begining of the task detail section -->
-                <div class="mail-detail">
-                    <div class="mail-detail-header">
-                        <div class="mail-detail-profile">
-                            <img src="./profiles/download (4).jpeg" alt="" class="members inbox-detail" />
-                            <div class="mail-detail-name">Festus Mutie</div>
-                        </div>
-                        <div class="mail-icons">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-trash-2">
-                                <path
-                                    d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2M10 11v6M14 11v6" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-user">
-                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                                <circle cx="12" cy="7" r="4" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-tag">
-                                <path
-                                    d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82zM7 7h.01" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-check-square">
-                                <path d="M9 11l3 3L22 4" />
-                                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-paperclip">
-                                <path
-                                    d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="mail-contents">
-                        <div class="mail-contents-subject">
-                            <input type="checkbox" name="msg" id="mail20" class="mail-choice" checked>
-                            <label for="mail20"></label>
-                            <p class="task-title">
-                                Write an article about design <br />
-                                <span class="date">27 Apr 2021</span>
-                            </p>                        </div>
-                        <div class="mail">
-
-                            <div class="mail-inside">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                                accumsan commodo
-                                lectus gravida dictum. Aliquam a dui eu arcu hendrerit porta sed in velit. Fusce eu
-                                semper magna. Aenean
-                                porta facilisis neque, ac dignissim magna vestibulum eu. Etiam id ligula eget neque
-                                placerat ultricies
-                                in sed neque. Nam vitae rutrum est. Etiam non condimentum ante, eu consequat orci.
-                                Aliquam a dui eu arcu
-                                hendrerit porta sed in velit. Fusce eu semper magna.
-                            </div>
-                            <div class="mail-checklist">
-                                <input type="checkbox" name="msg" id="mail30" class="mail-choice" checked>
-                                <label for="mail30">Festus completed this task.</label>
-                                <div class="mail-checklist-date"><span class="date">19 May, 2020</span></div>
-                            </div><br>
-                            <p>Aliquam a dui eu arcu hendrerit porta sed in velit. Fusce eu semper magna. Aenean
-                                porta facilisis neque, ac dignissim magna vestibulum eu. Etiam id ligula eget neque
-                                placerat
-                                ultricies
-                                in sed neque. Nam vitae rutrum est. Etiam non condimentum ante, eu consequat orci.
-                                Aliquam a
-                                dui eu arcu
-                                hendrerit porta sed in velit. Fusce eu semper magna.</p>
-                            <p>Fusce eu semper magna. Aenean
-                                porta facilisis neque, ac dignissim magna vestibulum eu. Etiam id ligula eget neque
-                                placerat
-                                ultricies
-                                in sed neque. Nam vitae rutrum est. Etiam non condimentum ante, eu consequat orci.
-                                Aliquam a
-                                dui eu arcu
-                                hendrerit porta sed in velit.</p>
-                            <p>Etiam non condimentum ante, eu consequat orci. Aliquam a dui eu arcu
-                                hendrerit porta sed in velit. Fusce eu semper magna.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="message-comment">
-                    <div class="col-md-10 text">
-                        <textarea type="text" placeholder="Write a comment..."></textarea>
-                    </div>
-                    <div class="col-md-2 send">
-                        <button class="btn btn-primary send-message">Send</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-
+						</div>
+					</div>
+					<!-- end of tasks list -->
+					<div id="addTask">
+						<button
+							id="addNewTask"
+							class="btn btn-primary"
+							type="button"
+							data-toggle="modal"
+							data-target="#modalId"
+						>
+							Add Task
+						</button>
+					</div>
+					<!--=============================== Modal =============================-->
+					<div
+						class="modal fade"
+						id="modalId"
+						tabindex="-1"
+						role="dialog"
+						aria-labelledby="modelTitleId"
+						aria-hidden="true"
+					>
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title">Add Task</h5>
+									<button
+										type="button"
+										class="close"
+										data-dismiss="modal"
+										aria-label="Close"
+									>
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<form>
+										<div class="form-group">
+											<label for="taskTitle">Task Title</label>
+											<input
+												type="text"
+												class="form-control"
+												name="taskTitle"
+												id="taskTitle"
+												aria-describedby="helpId"
+												placeholder=""
+											/>
+										</div>
+										<div class="form-group">
+											<label for="taskDescription">Task Description</label>
+											<textarea
+												class="form-control"
+												name="taskDescription"
+												id="taskDescription"
+												rows="3"
+												placeholder=""
+											></textarea>
+										</div>
+										<div class="form-group">
+											<label for="teamAssigned">Team Assigned</label>
+											<select
+												class="form-control"
+												name="teamAssigned"
+												id="teamAssigned"
+											>
+												<option value="" selected default disabled></option>
+												<option value="marketing">Marketing</option>
+												<option value="design">Design</option>
+												<option value="development">Development</option>
+												<option value="management">Management</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="memberAssigned">Team Member Assigned</label>
+											<select
+												class="form-control"
+												name="memberAssigned"
+												id="memberAssigned"
+											>
+												<!-- <option value="john">John Doe</option> -->
+												<!-- To be handled by jQuery -->
+											</select>
+										</div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button
+										type="button"
+										class="btn btn-secondary"
+										data-dismiss="modal"
+									>
+										Cancel
+									</button>
+									<button type="button" class="btn btn-primary px-5" id="add">
+										Add
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ===========================End of Modal======================================== -->
+				</div>
+				<div class="col-6" id="thirdColumn">
+					<!-- This is the begining of the task detail section -->
+					<div class="mail-detail">
+						<div class="mail-detail-header">
+							<div class="mail-detail-profile">
+								<div id="dp"></div>
+								<div class="mail-detail-name" id="selectedTaskName"></div>
+							</div>
+						</div>
+						<div class="mail-contents">
+							<div class="mail-contents-subject">
+								<input
+									type="checkbox"
+									name="msg"
+									id="mail20"
+									class="mail-choice"
+									checked
+								/>
+								<label for="mail20"></label>
+								<div class="mail-contents-title"></div>
+							</div>
+							<div class="mail">
+								<div class="mail-time">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="feather feather-clock"
+									>
+										<circle cx="12" cy="12" r="10" />
+										<path d="M12 6v6l4 2" />
+									</svg>
+								</div>
+								<div class="mail-inside"></div>
+								<div class="mail-checklist">
+									<input
+										type="checkbox"
+										name="msg"
+										id="mail30"
+										class="mail-choice"
+										checked
+									/>
+									<label for="mail30"><span id="userCompleted"> </span></label>
+									<div class="mail-checklist-date"></div>
+								</div>
+							</div>
+						</div>
+						<div class="mail-textarea">
+							<input type="text" placeholder="Write a comment..." />
+							<div class="textarea-icons">
+								<div class="attach">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="feather feather-paperclip"
+									>
+										<path
+											d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"
+										/>
+									</svg>
+								</div>
+								<div class="send">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="feather feather-send"
+									>
+										<path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- This is the end of the task detail section -->
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
