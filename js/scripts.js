@@ -27,7 +27,7 @@ let john = new Member(
 let jane = new Member(
 	"Jane Doe",
 	"janedoe@mail.com",
-	"./img/jane.jpeg"
+	"../img/jane.jpeg"
 );
 let nicholas = new Member(
 	"Nicholas Ngetich",
