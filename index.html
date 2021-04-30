@@ -196,9 +196,9 @@
                 <div class="mail-detail">
                     <div class="mail-detail-header">
                         <div class="mail-detail-profile">
-                            <img src="./profiles/download (4).jpeg" alt="" class="members inbox-detail" />
-                            <div class="mail-detail-name">Festus Mutie</div>
-                        </div>
+								<div id="dp"></div>
+								<div class="mail-detail-name" id="selectedTaskName"></div>
+							</div>
                         <div class="mail-icons">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -236,45 +236,19 @@
                         <div class="mail-contents-subject">
                             <input type="checkbox" name="msg" id="mail20" class="mail-choice" checked>
                             <label for="mail20"></label>
-                            <p class="task-title">
-                                Write an article about design <br />
+                            <p class="task-title"><br />
                                 <span class="date">27 Apr 2021</span>
                             </p>                        
                         </div>
                         <div class="mail">
 
-                            <div class="mail-inside">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                                accumsan commodo
-                                lectus gravida dictum. Aliquam a dui eu arcu hendrerit porta sed in velit. Fusce eu
-                                semper magna. Aenean
-                                porta facilisis neque, ac dignissim magna vestibulum eu. Etiam id ligula eget neque
-                                placerat ultricies
-                                in sed neque. Nam vitae rutrum est. Etiam non condimentum ante, eu consequat orci.
-                                Aliquam a dui eu arcu
-                                hendrerit porta sed in velit. Fusce eu semper magna.
+                            <div class="mail-inside">
                             </div>
-                            <p>Aliquam a dui eu arcu hendrerit porta sed in velit. Fusce eu semper magna. Aenean
-                                porta facilisis neque, ac dignissim magna vestibulum eu. Etiam id ligula eget neque
-                                placerat
-                                ultricies
-                                in sed neque. Nam vitae rutrum est. Etiam non condimentum ante, eu consequat orci.
-                                Aliquam a
-                                dui eu arcu
-                                hendrerit porta sed in velit. Fusce eu semper magna.</p>
-                            <!-- <p>Fusce eu semper magna. Aenean
-                                porta facilisis neque, ac dignissim magna vestibulum eu. Etiam id ligula eget neque
-                                placerat
-                                ultricies
-                                in sed neque. Nam vitae rutrum est. Etiam non condimentum ante, eu consequat orci.
-                                Aliquam a
-                                dui eu arcu
-                                hendrerit porta sed in velit.</p> -->
-                            <p>Etiam non condimentum ante, eu consequat orci. Aliquam a dui eu arcu
-                                hendrerit porta sed in velit. Fusce eu semper magna.</p>
+                            
                                 <div class="mail-checklist description">
                                     <input type="checkbox" name="msg" id="mail30" class="mail-choice" checked>
-                                    <label for="mail30">Festus completed this task.</label>
-                                    <span class="date describe">19 May, 2020</span>
+                                    <label for="mail30" id="userCompleted"></label>
+                                    <span class="date describe mail-checklist-date"></span>
                                 </div><br>
                             <section>
                                 <p class="task-comments">Comments:</p>

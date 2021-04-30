@@ -261,13 +261,12 @@ $(document).ready(function () {
 
 		for (let x = 0; x < teams.length; x++) {
 			if (selectedTeam.toUpperCase() == teams[x].name.toUpperCase()) {
-				let currentTask = teams[x].tasks[idIndex].title;
-				$("#selectedTaskName").html(teams[x].tasks[idIndex].assignee.name);
+				$(".mail-detail-name").html(teams[x].tasks[idIndex].assignee.name);
 				$("#userCompleted").html(
 					teams[x].tasks[idIndex].assignee.name.split(" ", 1) +
 						" completed this task."
 				);
-				$(".mail-contents-title").html(teams[x].tasks[idIndex].title);
+				$(".task-title").html(teams[x].tasks[idIndex].title);
 				$(".mail-inside").html(teams[x].tasks[idIndex].description);
 				$("#dp").empty();
 				$("#dp").prepend(
@@ -292,6 +291,6 @@ $(document).ready(function () {
 			$('send-message').attr('disabled', 'true');
 			let form = document.getElementsByName("comments")[0];
 			form.reset();
-			return false
+			return false;
 		});
 });
