@@ -262,10 +262,21 @@ $(document).ready(function () {
 		for (let x = 0; x < teams.length; x++) {
 			if (selectedTeam.toUpperCase() == teams[x].name.toUpperCase()) {
 				$(".mail-detail-name").html(teams[x].tasks[idIndex].assignee.name);
-				$("#userCompleted").html(
-					teams[x].tasks[idIndex].assignee.name.split(" ", 1) +
-						" completed this task."
-				);
+				
+                $(".mail-choice").change(function () {
+                    if ($(this).is(":checked")) {
+                        $("#userCompleted").html(
+                            teams[x].tasks[idIndex].assignee.name.split(" ", 1) +
+                            " completed this task."
+                        );
+                    } else {
+                        $("#userCompleted").html(
+                            teams[x].tasks[idIndex].assignee.name.split(" ", 1) +
+                            " has not completed this task."
+                        );
+                    }
+                });
+                
 				$(".task-title").html(teams[x].tasks[idIndex].title);
 				$(".mail-inside").html(teams[x].tasks[idIndex].description);
 				$("#dp").empty();
