@@ -57,7 +57,7 @@ let samora = new Member(
 let floice = new Member(
 	"Floice Nyoita",
 	"floice@mail.com",
-	"../img/profile-pics/floice.jpeg"
+	"/img/profile-pics/floice.jpeg"
 );
 let aspin = new Member(
 	"Aspin Isoe",
