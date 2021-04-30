@@ -22,12 +22,12 @@ var date = new Date();
 let john = new Member(
 	"John Doe",
 	"johndoe@mail.com",
-	"../img/profile-pics/john.jpeg"
+	"./img/profile-pics/john.jpeg"
 );
 let jane = new Member(
 	"Jane Doe",
 	"janedoe@mail.com",
-	"../img/profile-pics/jane.jpeg"
+	"./img/profile-pics/jane.jpeg"
 );
 let nicholas = new Member(
 	"Nicholas Ngetich",
