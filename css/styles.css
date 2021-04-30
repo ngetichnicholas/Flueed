@@ -127,6 +127,7 @@ body {
 svg {
     margin-top: 0;
     height: 15px;
+    cursor: pointer;
 }
 
 .task {
@@ -572,6 +573,7 @@ label {
     color: var(--button-color);
     font-weight: 600;
     font-size: 1rem;
+    margin-bottom: 0;
 }
 
 .mail-time-checklist-date {
@@ -643,6 +645,9 @@ textarea {
     padding-top: 2rem;
     padding-left: 1rem;
     background-color: #F0F1F7;
+}
+form {
+    height: 100%;
 }
 .send-message {
     border-radius: 0;
@@ -728,7 +733,8 @@ section ul li:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 .describe {
     margin-left: 2rem;
