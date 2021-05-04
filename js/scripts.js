@@ -229,17 +229,17 @@ $(document).ready(function () {
 				for (let m = 0; m < teams[n].tasks.length; m++) {
 					let index = m + 1;
 					$("#tasksList").append(
-						'<div class="row task"><div class="colmd-2 tick"><input type="checkbox" name="msg" id="mail' +
+						'<div class="row task"><div class="col-md-3 tick"><input type="checkbox" name="msg" id="mail' +
 							index +
 							'" class="mail-choice" /><label for="mail' +
 							index +
-							'"></label></div><div class="col-md-8 profile"><p class="title" id="' +
+							'"></label></div><div class="col-md-6 profile"><p class="title" id="' +
 							index +
 							'">' +
 							teams[n].tasks[m].title +
 							'<br /><span class="date">' +
 							date.toDateString() +
-							'</span></p> </div><div class="col-md-2"><img src="' +
+							'</span></p> </div><div class="col-md-3"><img src="' +
 							teams[n].tasks[m].assignee.picUrl +
 							'" alt="" width="40px" height="40px" /></div></div>'
 					);
